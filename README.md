@@ -1,7 +1,6 @@
 # Adobe ExtendScript Require
 
-Function `require` compatible with [node.js](http://nodejs.org "Node.js").
-Could be used with [es-node](https://github.com/coderaiser/es-node "AE Node").
+Function `require` compatible with [commonjs]
 
 ## Why?
 
@@ -10,17 +9,29 @@ It puts all modules to global scope. With `require` it could be avoided.
 
 ## Example
 
+***main.js***
 ```js
-#include 'lib/require.js';
+"use strict";
+#include "./lib/require.js";
+require.dir(File($.fileName).path + "/lib/");
+var testLib_1 = require("./testLib");
+function main() {
+    testLib_1["default"]();
+}
+main();
+```
 
-var fs      = require('lib/fs'),
-    data    = fs.readFileSync('name');
-
-alert(data);
+***testLib.js***
+```js
+"use strict";
+function mang() {
+    $.writeln("hello");
+}
+exports["default"] = mang;
 ```
 ## See Also
 
-- [require for MongoDB](https://github.com/coderaiser/mongo-require "Mongo Require")
+- [es-require for node.js](https://github.com/coderaiser/es-require)
 
 ## License
 
