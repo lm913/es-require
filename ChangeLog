@@ -1,27 +1,4 @@
-2015.04.01, v1.0.4
+2017.06.13, v1.0.0
 
-fix:
-- (require) exports -> module.exports
-
-
-2015.03.01, v1.0.3
-
-fix:
-- (require) require: exports is undefined
-
-feature:
-- (package) v1.0.2
-- (require) require: rm begin, end, add args
-
-
-2015.03.01, v1.0.2
-
-feature:
-- (require) require: rm begin, end, add args
-
-
-2015.02.26, v1.0.1
-
-feature:
-- (require) read files as utf-8
-
+initial:
+- modified coderaiser/es-require source code to work with commonjs
