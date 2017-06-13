@@ -47,7 +47,7 @@ exports["default"] = mang2;
 
 ## See Also
 
-- [es-require for node.js](https://github.com/coderaiser/es-require)
+- [es-require for node.js](https://github.com/coderaiser/es-require) by [coderaiser](https://github.com/coderaiser)
 
 ## License
 
