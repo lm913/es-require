@@ -1,6 +1,6 @@
 # Adobe ExtendScript Require
 
-Function `require` compatible with [commonjs]
+Function `require` compatible with _commonjs_
 
 ## Why?
 
