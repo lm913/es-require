@@ -14,6 +14,7 @@ It puts all modules to global scope. With `require` it could be avoided.
 "use strict";
 #include "./lib/require.js";
 
+require.dir(File($.fileName).path);
 var testLib_1 = require("./testLib");
 var testLib_2 = require("./../../testLib2");
 
