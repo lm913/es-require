@@ -1,4 +1,10 @@
+2017.06.15, v1.0.1
+
+- require.dir() no longer needs the path to be set to the argument in 
+  require() but does require you to specify the current script's 
+  directory with File($.fileName).path)
+
+
 2017.06.13, v1.0.0
 
-initial:
 - modified coderaiser/es-require source code to work with commonjs
